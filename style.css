@@ -1,0 +1,70 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15vh 15vh 1fr 15vh;
+    gap: 5px;
+}
+.logga{
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+header{
+    grid-area: 1/2/2/3;
+    background-color: black;
+    color: #fbfdff;
+    text-align: center;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+nav{
+    grid-area: 2/2/3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 3px
+}
+a{
+    color: #fbfdff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+aside{
+    grid-area: 2/1/5/2;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/background.jpg);
+    border: 2px solid black;
+    border-radius: 3px;
+}
+main{
+    grid-area: 3/2/4/3;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    image-resolution: 250px, 250px;
+}
+.album{
+    min-width: 30%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    color: #fbfdff;
+    border: 2px solid black;
+    border-radius: 3px
+}
